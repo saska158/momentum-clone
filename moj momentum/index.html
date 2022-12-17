@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Momentum</title>
+</head>
+<body>
+    
+    <main>
+        <div class="top">
+            <div></div>
+            <div class="weather" id="weather"></div>
+        </div>
+        <div class="center">
+            <h1 class="time" id="time"></h1>
+            <div id="name-modal" class="name-modal">
+                <label class="name-label" id="name-label" for="name-input">What's your name?</label>
+                <input type="text" class="name-input" id="name-input">
+            </div>
+            
+            <div class="center-modal" id="center-modal">
+                <p class="greeting" id="greeting"></p>
+                <label class="center-label" id="center-label" for="center-input">
+                    What is your main focus for today?</label>
+                <input class="center-input" id="center-input" type="text"> 
+            </div>
+            <div class="focus-today" id="focus-today">
+                <p style="font-weight: 700;">TODAY</p>
+                <div class="focus-today-container">
+                    <input type="checkbox" class="focus-today-check" id="focus-today-check">
+                    <label for="focus-today-check" class="focus-today-label" id="focus-today-label"></label>
+                    <button class="delete-focus" id="delete-focus">x</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="img-location" id="img-location">
+            </div>
+            <div class="quote" id="quote"></div>
+            <div class="todo" id="todo">
+                <div class="todo-container" id="todo-container">
+                    <div class="todo-btn" id="todo-btn">Todo</div>
+                    <div class="todo-modal" id="todo-modal">
+                        <p id="clear-todos" class="clear-todos">Clear all</p>
+                        <div class="todo-modal-inner" id="todo-modal-inner">
+                           <p id="no-todos" class="no-todos">No todos yet</p>
+                           <button class="new-todo-btn" id="new-todo-btn">New Todo</button>   
+                        </div>
+                        <input type="text" id="new-todo-input" class="new-todo-input" placeholder="New Todo" autofocus>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="index.js" type="module"></script>
+    <script src="currentTime.js"></script>
+    <script src="weather.js"></script>
+    <script src="background.js"></script>
+    <script src="quotes.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
